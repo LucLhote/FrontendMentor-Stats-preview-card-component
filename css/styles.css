@@ -183,8 +183,9 @@ body {
         grid-template-areas: 
             'marketing-infos photography'
             'marketing-numbers photography';
-        /* grid-template-rows: 188px auto; */
-        gap: 0;
+        grid-template-columns: 570px auto;
+        grid-template-rows: 256px auto;
+        gap: 72px;
     }
 
     /* Section Graphic Element */
@@ -208,12 +209,12 @@ body {
     /* Section Marketing Infos */
     .card__marketing-infos {
         /* width: 570px; */
-        /* width: 495px; */
-        width: 400px;
-        height: 188px;
-        margin-top: 72px;
-        margin-left: 72px;
-        margin-bottom: 10px;
+        /* width: 493px; */
+        /* width: 400px; */
+        /* height: 188px; */
+        /* margin-top: 72px; */
+        /* margin-left: 72px; */
+        /* margin-bottom: 10px; */
         align-items: flex-start;
         gap: 25px;
         text-align: left;
@@ -223,15 +224,19 @@ body {
     .card__headline {
         line-height: 44px;
         font-size: 36px;
+        margin-top: 72px;
+        margin-left: 72px;
+        /* background-color: yellow; */
     }
 
     .card__copy {
         width: 374px;
+        margin-left: 72px;
     }
 
     /* Section Marketing Numbers */
     .card__marketing-numbers {
-        width: 400px;
+        /* width: 400px; */
         margin-left: 72px;
         justify-content: flex-start;
         align-items: flex-start;
