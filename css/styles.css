@@ -210,7 +210,7 @@ body {
         width: 495px;
         height: 188px;
         margin-top: 72px;
-        margin-left: 75px;
+        margin-left: 72px;
         align-items: flex-start;
         gap: 25px;
         text-align: left;
@@ -227,7 +227,7 @@ body {
 
     /* Section Marketing Numbers */
     .card__marketing-numbers {
-        margin-left: 75px;
+        margin-left: 72px;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 62px;
