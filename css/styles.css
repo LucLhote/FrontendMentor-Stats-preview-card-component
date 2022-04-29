@@ -185,7 +185,7 @@ body {
             'marketing-numbers photography';
         grid-template-columns: auto 540px;
         grid-template-rows: 256px auto;
-        gap: 72px;
+        gap: 70px;
     }
 
     /* Section Graphic Element */
