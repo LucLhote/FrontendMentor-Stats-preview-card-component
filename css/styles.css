@@ -34,9 +34,12 @@ body {
 
 .card {
     width: 327px;
+    width: 20.4375rem;
     height: 780px;
+    height: 48.75rem;
     background-color: var(--card-background-color);
     border-radius: 8px;
+    border-radius: .5rem;
     display: grid;
     grid-auto-rows: min-content;
     grid-template-areas: 
@@ -44,6 +47,7 @@ body {
         'marketing-infos'
         'marketing-numbers';
     gap: 40px;
+    gap: 2.5rem;
     text-align: center;
 }
 
@@ -73,6 +77,7 @@ body {
 
 .card--block-border-radius {
     border-radius: 8px 8px 0 0;
+    border-radius: .5rem .5rem 0 0;
 }
 
 /* Section Marketing Infos */
@@ -82,20 +87,27 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    gap: 1rem;
 }
 
 .card__headline {
     width: 264px;
+    width: 16.5rem;
     line-height: 32px;
+    line-height: 2rem;
     font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--primary-font-color);
 }
 
 .card__copy {
     width: 264px;
+    width: 16.5rem;
     line-height: 25px;
+    line-height: 1.5625rem;
     font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 400;
     color: var(--tertiary-font-color);
 }
@@ -110,22 +122,28 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    gap: 1.5rem;
 }
 
 .card__number-data {
     line-height: 29px;
+    line-height: 1.8125rem;
     font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-font-color);
     margin-bottom: 2px;
-    /* margin-bottom: 11px; */
+    margin-bottom: 0.125rem;
 }
 
 .card__text-data {
     line-height: 25px;
+    line-height: 1.5625rem;
     font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     text-transform: uppercase;
     font-family: var(--secondary-font);
     color: var(--tertiary-font-color);
@@ -137,9 +155,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    gap: 0.3125rem;
     font-size: 11px;
+    font-size: 0.6875rem;
     color: var(--secondary-font-color);
     margin-top: 10px;
+    margin-top: 0.625rem;
 }
     
 .attribution a {
@@ -149,22 +170,28 @@ body {
 @media screen and (min-width: 560px) {
     .card {
         width: 500px;
+        width: 31.25rem;
         height: 600px;
-        gap: 30px ;
+        height: 37.5rem;
+        gap: 30px;
+        gap: 1.875rem;
     }
 
     /* Section Graphic Element */
     .card__graphic-elements {
         height: 300px;
+        height: 18.75rem;
         overflow: hidden;
     }
 
     .card__headline {
         width: 400px;
+        width: 25rem;
     }
 
     .card__copy {
         width: 400px;
+        width: 25rem;
     }
 
     /* Section Marketing Numbers */
@@ -173,24 +200,31 @@ body {
         justify-content: center;
         align-items: center;
         gap: 100px;
+        gap: 6.25rem;
     }
 }
 
 @media screen and (min-width: 1100px) {
     .card {
         width: 1110px;
+        width: 69.375rem;
         height: 446px;
+        height: 27.875rem;
         grid-template-areas: 
             'marketing-infos photography'
             'marketing-numbers photography';
         grid-template-columns: auto 540px;
+        grid-template-columns: auto 33.75rem;
         grid-template-rows: 256px auto;
+        grid-template-rows: 16rem auto;
         gap: 75px;
+        gap: 4.6875rem;
     }
 
     /* Section Graphic Element */
     .card__graphic-elements {
         width: 540px;
+        width: 33.75rem;
         height: 100%;
     }
 
@@ -204,44 +238,43 @@ body {
 
     .card--block-border-radius {
         border-radius: 0 8px 8px 0;
+        border-radius: 0 .5rem .5rem 0;
     }
 
     /* Section Marketing Infos */
     .card__marketing-infos {
-        /* width: 570px; */
-        /* width: 493px; */
-        /* width: 400px; */
-        /* height: 188px; */
-        /* margin-top: 72px; */
-        /* margin-left: 72px; */
-        /* margin-bottom: 10px; */
         align-items: flex-start;
         gap: 25px;
+        gap: 1.5625rem;
         text-align: left;
-        /* background-color: green; */
     }
 
     .card__headline {
         line-height: 44px;
+        line-height: 2.75rem;
         font-size: 36px;
+        font-size: 2.25rem;
         margin-top: 72px;
+        margin-top: 4.5rem;
         margin-left: 72px;
-        /* background-color: yellow; */
+        margin-left: 4.5rem;
     }
 
     .card__copy {
         width: 374px;
+        width: 23.375rem;
         margin-left: 72px;
+        margin-left: 4.5rem;
     }
 
     /* Section Marketing Numbers */
     .card__marketing-numbers {
-        /* width: 400px; */
         margin-left: 72px;
+        margin-left: 4.5rem;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 62px;
+        gap: 3.875rem;
         text-align: left;
-        /* background-color: red; */
     }
 }
