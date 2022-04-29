@@ -183,6 +183,7 @@ body {
         grid-template-areas: 
             'marketing-infos photography'
             'marketing-numbers photography';
+        /* grid-template-rows: 188px auto; */
         gap: 0;
     }
 
@@ -207,13 +208,16 @@ body {
     /* Section Marketing Infos */
     .card__marketing-infos {
         /* width: 570px; */
-        width: 495px;
+        /* width: 495px; */
+        width: 400px;
         height: 188px;
         margin-top: 72px;
         margin-left: 72px;
+        margin-bottom: 10px;
         align-items: flex-start;
         gap: 25px;
         text-align: left;
+        /* background-color: green; */
     }
 
     .card__headline {
@@ -227,10 +231,12 @@ body {
 
     /* Section Marketing Numbers */
     .card__marketing-numbers {
+        width: 400px;
         margin-left: 72px;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 62px;
         text-align: left;
+        /* background-color: red; */
     }
 }
