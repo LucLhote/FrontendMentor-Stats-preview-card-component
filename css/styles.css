@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400");
+
+:root {
+    /* Colors */
+    --main-background-color: #0A0C1C;
+    --card-background-color: #1B1937;
+
+    --accent-color: #AB5CDB;
+
+    --primary-font-color: #FFFFFF;
+    --secondary-font-color: hsla(0, 0%, 100%, 0.75);
+    --tertiary-font-color: hsla(0, 0%, 100%, 0.6);
+
+    /* Fonts */
+    --main-font:  "Inter", sans-serif;
+    --secondary-font: "Lexend Deca", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+.card {
+    width: 327px;
+    height: 780px;
+    background-color: var(--card-background-color);
+    border-radius: 8px;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-areas: 
+        'photography'
+        'marketing-infos'
+        'marketing-numbers';
+    gap: 40px;
+    text-align: center;
+}
+
+/* Section Graphic Element */
+.card__graphic-elements {
+    grid-area: photography;
+    background-color: var(--accent-color);
+}
+
+.card__img-mobile {
+    width: 100%;
+    display: block;
+}
+
+.card__img-desktop {
+    width: 100%;
+    display: none;
+}
+
+.card--blend-mode {
+    mix-blend-mode: multiply;
+}
+
+.card--img-opacity {
+    opacity: .75;
+}
+
+.card--block-border-radius {
+    border-radius: 8px 8px 0 0;
+}
+
+/* Section Marketing Infos */
+.card__marketing-infos {
+    grid-area: marketing-infos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.card__headline {
+    width: 264px;
+    line-height: 32px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-font-color);
+}
+
+.card__copy {
+    width: 264px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--tertiary-font-color);
+}
+
+.card--violet-font {
+    color: var(--accent-color);
+}
+
+/* Section Marketing Numbers */
+.card__marketing-numbers {
+    grid-area: marketing-numbers;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card__number-data {
+    line-height: 29px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-font-color);
+    margin-bottom: 2px;
+    /* margin-bottom: 11px; */
+}
+
+.card__text-data {
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    color: var(--tertiary-font-color);
+}
+
+/* Footer Attribution */
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: var(--secondary-font-color);
+    margin-top: 10px;
+}
+    
+.attribution a {
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 560px) {
+    .card {
+        width: 500px;
+        height: 600px;
+        gap: 30px ;
+    }
+
+    /* Section Graphic Element */
+    .card__graphic-elements {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .card__headline {
+        width: 400px;
+    }
+
+    .card__copy {
+        width: 400px;
+    }
+
+    /* Section Marketing Numbers */
+    .card__marketing-numbers {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .card {
+        width: 1110px;
+        height: 446px;
+        grid-template-areas: 
+            'marketing-infos photography'
+            'marketing-numbers photography';
+        gap: 0;
+    }
+
+    /* Section Graphic Element */
+    .card__graphic-elements {
+        width: 540px;
+        height: 100%;
+    }
+
+    .card__img-mobile {
+        display: none;
+    }
+    
+    .card__img-desktop {
+        display: block;
+    }
+
+    .card--block-border-radius {
+        border-radius: 0 8px 8px 0;
+    }
+
+    /* Section Marketing Infos */
+    .card__marketing-infos {
+        /* width: 570px; */
+        width: 495px;
+        height: 188px;
+        margin-top: 75px;
+        margin-left: 75px;
+        align-items: flex-start;
+        gap: 25px;
+        text-align: left;
+    }
+
+    .card__headline {
+        line-height: 44px;
+        font-size: 36px;
+    }
+
+    .card__copy {
+        width: 374px;
+    }
+
+    /* Section Marketing Numbers */
+    .card__marketing-numbers {
+        margin-left: 75px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 62px;
+        text-align: left;
+    }
+}
